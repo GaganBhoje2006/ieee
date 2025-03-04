@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Culture & Tradition</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background-color: #f8f8f8;
+        }
+        
+        .hero {
+            background-image: url('images/hero.jpg'); /* Replace with your hero image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 150px 0;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Overlay for better readability */
+        }
+        
+        .hero-content {
+            position: relative; /* Bring content forward */
+            z-index: 1;
+            padding: 50px;
+            border-radius: 10px;
+            display: inline-block;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #d32f2f;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .traditions, .arts {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        .traditions h2, .arts h2 {
+            margin-bottom: 30px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .traditions-grid, .arts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .tradition-item, .art-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tradition-item img, .art-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .tradition-item h3, .art-item h3 {
+            padding: 10px;
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .tradition-item p, .art-item p {
+            padding: 0 10px 10px;
+        }
+        
+        .art-item a {
+            display: block;
+            padding: 10px;
+            background-color: #f0f0f0;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 100px 0;
+            }
+        
+            .hero h1 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Exploring India's Cultural Tapestry</h1>
+                <p>Discover the vibrant traditions and rich heritage of India.</p>
+                <a href="#traditions" class="btn">Explore Traditions</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="traditions" class="traditions">
+        <h2>Our Cultural Traditions</h2>
+        <div class="traditions-grid">
+            <div class="tradition-item">
+                <img src="https://th.bing.com/th/id/OIP.U5-FOj-whfNHY4i4H64tPQHaI0?w=5040&h=6000&rs=1&pid=ImgDetMain"
+                    alt="Namaste">
+                <h3>Namaste</h3>
+                <p>The traditional Indian greeting, a gesture of respect and welcome.</p>
+            </div>
+            <div class="tradition-item">
+                <img src="https://th.bing.com/th/id/R.3d2b2d536e2ab420acd38362e223b11d?rik=iD6Nc2W7efzi6w&riu=http%3a%2f%2fsites.lafayette.edu%2fisa%2ffiles%2f2014%2f10%2fDiwali-Diyas.jpg&ehk=yP9r8%2fBTWCSDn7oSLXkAMl%2brtxd8hArTjIQcpazMvo4%3d&risl=&pid=ImgRaw&r=0"
+                    alt="Diwali">
+                <h3>Diwali</h3>
+                <p>The festival of lights, symbolizing the victory of light over darkness.</p>
+            </div>
+            <div class="tradition-item">
+                <img src="https://th.bing.com/th/id/OIP.a047Qj8J1Azlo6nkOHNBUgHaHa?rs=1&pid=ImgDetMain" alt="Yoga">
+                <h3>Yoga</h3>
+                <p>An ancient physical, mental, and spiritual practice originating in India.</p>
+            </div>
+            <div class="tradition-item">
+                <img src="https://i.pinimg.com/originals/b0/a7/c7/b0a7c7eb5bfd5929ed24a0daeecdc85a.jpg" alt="Henna">
+                <h3>Henna (Mehendi)</h3>
+                <p>Temporary body art, often used in celebrations and ceremonies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="arts">
+        <h2>Indian Arts & Crafts</h2>
+        <div class="arts-grid">
+            <div class="art-item">
+                <img src="https://i.pinimg.com/originals/16/eb/f6/16ebf64c805dea516c76aacae7c9c43d.jpg"
+                    alt="Kathak Dance">
+                <h3>Classical Dance</h3>
+                <p>Explore the diverse classical dance forms of India.</p>
+                <a href="#" class="read-more">Learn More</a>
+            </div>
+            <div class="art-item">
+                <img src="https://th.bing.com/th/id/OIP.PmDIZ8Ds6DX4DbJFsbbtGwHaGL?rs=1&pid=ImgDetMain"
+                    alt="Indian Textiles">
+                <h3>Textiles</h3>
+                <p>Discover the intricate patterns and vibrant colors of Indian textiles.</p>
+                <a href="#" class="read-more">Learn More</a>
+            </div>
+            <div class="art-item">
+                <img src="https://th.bing.com/th/id/OIP.f9G_PpCpPr0OQPY0qtvNKwHaEo?rs=1&pid=ImgDetMain"
+                    alt="Indian Paintings">
+                <h3>Paintings</h3>
+                <p>From miniature to folk, explore the rich history of Indian painting.</p>
+                <a href="#" class="read-more">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Indian Culture & Tradition. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
